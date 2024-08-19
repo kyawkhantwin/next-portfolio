@@ -1,3 +1,4 @@
+
 export default function DocsLayout({
   children,
 }: {
@@ -5,9 +6,7 @@ export default function DocsLayout({
 }) {
   return (
     <section className="flex flex-col  gap-4 ">
-      <div className="   ">
-        {children}
-      </div>
+      <div className="   ">{children}</div>
     </section>
   );
 }

@@ -46,6 +46,10 @@ export const subtitle = tv({
     fullWidth: {
       true: "!w-full",
     },
+    bold: {
+      true: "font-bold",
+    },
+    
   },
   defaultVariants: {
     fullWidth: true,

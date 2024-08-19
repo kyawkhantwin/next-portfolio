@@ -5,11 +5,11 @@ import { Image } from "@nextui-org/image";
 export default function AboutPage() {
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-12 w-full  ">
+      <div className="flex flex-col-reverse md:flex-row md:items-center justify-between gap-12 w-full mt-10  ">
         <div className="md:w-1/2">
           <h1 className={title({ size: "md" })}>About Me</h1>
           <div className="mt-5"></div>
-          <p className={subtitle()}>
+          <p >
             I started learning web basics from MMSIT in 2021 and then continued
             my education through Udemy. Later, I took an e-commerce tutorial
             course from MMCODER and successfully built my own e-commerce website
