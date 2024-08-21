@@ -6,6 +6,15 @@ import { Image } from "@nextui-org/image";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState, useRef } from "react";
 
+// Define a type for possible slugs
+type Slug =
+  | "chat"
+  | "ecommerce-native"
+  | "bookstore"
+  | "restaurant"
+  | "mallmax"
+  | "lightcode";
+
 type Data = {
   name: string;
   images: string[];
@@ -15,23 +24,29 @@ type Data = {
 };
 
 const Page = () => {
-  const { slug } = useParams();
+  const { slug } = useParams<{ slug: Slug }>();
   const [data, setData] = useState<Data | undefined>(undefined);
+  const [currentImageUrl, setCurrentImageUrl] = useState<string>("");
+  const [activeThumbnail, setActiveThumbnail] = useState<string>("");
   const descriptionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (slug) {
-      const dynamicData = getDataBaseOnRoute(slug as "bookstore");
+      const dynamicData = getDataBaseOnRoute(slug);
       setData(dynamicData);
     }
   }, [slug]);
 
   useEffect(() => {
-    if (data?.description && descriptionRef.current) {
-      const newDiv = document.createElement('div');
-      newDiv.innerHTML = data.description;
-      descriptionRef.current.innerHTML = '';
-      descriptionRef.current.appendChild(newDiv);
+    if (data) {
+      setCurrentImageUrl(data.images[0]);
+      setActiveThumbnail(data.images[0]); // Initialize the active thumbnail
+      if (data.description && descriptionRef.current) {
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = data.description;
+        descriptionRef.current.innerHTML = "";
+        descriptionRef.current.appendChild(newDiv);
+      }
     }
   }, [data]);
 
@@ -45,19 +60,25 @@ const Page = () => {
       {/* Image */}
       <div className="flex flex-col lg:flex-row items-center justify-start gap-2 md:gap-4">
         <div className="lg:w-2/3 w-full">
-          <Image
-            alt={data?.name}
-            className="object-cover rounded-xl"
-            src={data?.images[0]}
-          />
+          {currentImageUrl && (
+            <Image
+              alt={data?.name || "Image"}
+              className="object-cover rounded-xl"
+              src={currentImageUrl}
+            />
+          )}
         </div>
         <div className="lg:w-1/5 w-full flex md:flex-col gap-2 md:gap-4">
           {data?.images?.map((image, i) => (
             <Image
               key={i}
               alt={"Thumbnail " + i}
-              className="object-cover rounded-xl"
+              className={`object-cover rounded-xl ${activeThumbnail === image ? 'opacity-90' : 'opacity-60'}`}
               src={image}
+              onClick={() => {
+                setCurrentImageUrl(image);
+                setActiveThumbnail(image);
+              }}
             />
           ))}
         </div>

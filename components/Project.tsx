@@ -24,7 +24,7 @@ export default function Project ({name,url,slug} : projectCard) {
         />
       </CardBody>
       <CardFooter>
-      <Link href={"/projects/" + slug} underline="hover"  color="success" showAnchorIcon  >Detail  </Link>
+    <Link href={"/projects/" + slug} underline="hover"  color="success" showAnchorIcon  >Detail  </Link>
       </CardFooter>
     </Card>
   );

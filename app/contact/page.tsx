@@ -34,7 +34,7 @@ export default function ContactPage() {
   return (
     <div className="w-full flex flex-col md:flex-row justify-between gap-8">
       <div className="md:w-1/2 w-full">
-        <h1 className={title({ size: "sm" })}>Send Me An Email</h1>
+        <h1 className={title({ size: "sm" })}>Contact Me</h1>
         <div className="mt-3 md:mt-5"></div>
         <p className={subtitle()}>
         Thank you for visiting my portfolio! You can ask any questions you might have. Whether you're

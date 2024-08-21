@@ -44,6 +44,7 @@ export const siteConfig = {
   ],
   links: {
     facebook :'https://www.facebook.com/kyawkhantwin.kkw',
-    messenger: "https://m.me//kyawkhantwin.kkw"
+    mobileMessenger: "https://m.me/kyawkhantwin.kkw",
+    webMessenger: " https://www.facebook.com/messages/t/100067733777474"
   },
 };

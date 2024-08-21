@@ -23,9 +23,9 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     bookstore: {
       name: "Book Store",
       images: [
-        "/project/bookStore.png",
-        "/project/bookStore.png",
-        "/project/bookStore.png",
+        "/project/bookstore1.png",
+        "/project/bookstore2.png",
+        "/project/bookstore3.png",
       ],
       description: `This app is built at the start of 2024 as a warm-up after taking a break.
          It's a simple app where you need to log in to store books.
@@ -40,9 +40,9 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     "ecommerce-native": {
       name: "React Native Ecommerce",
       images: [
-        "/project/ecommercenative.png",
-        "/project/ecommercenative.png",
-        "/project/ecommercenative.png",
+        "/project/ecommercenative1.png",
+        "/project/ecommercenative2.png",
+        "/project/ecommercenative3.png",
       ],
       description: `After writting the react-native chat application , I learned redux and nest.js to updated my stack.
     I put everything together in this eCommerce project.
@@ -72,9 +72,9 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     restaurant: {
       name: "React Restaurants POS",
       images: [
-        "/project/restuant.png",
-        "/project/restuant.png",
-        "/project/restuant.png",
+        "/project/restaurant1.png",
+        "/project/restaurant2.png",
+        "/project/restaurant3.png",
       ],
       description: `Built after writing React Book Store.
       At that time, I was learning Tailwind CSS and Express, so I used pure Tailwind without any UI framework.
@@ -99,17 +99,22 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     chat: {
       name: "Chat (Real Time Chat Feature)",
       images: [
-        "/project/chatnative.png",
-        "/project/chatnative.png",
-        "/project/chatnative.png",
+        "/project/chat1.png",
+        "/project/chat2.png",
+        "/project/chat3.png",
       ],
       description: `After the Restaurant POS project, 
       I built this React Native chat app . In this project,
       you can add, unfriend, and accept friends, just like on social media. 
       Both users have to be friends to be able to talk.
-      It can also use in Web`
-      ,
-      stacks: ['Socket.io',"Mongo", "Express", "Expo (React Native)", "Node.JS"],
+      It can also use in Web`,
+      stacks: [
+        "Socket.io",
+        "Mongo",
+        "Express",
+        "Expo (React Native)",
+        "Node.JS",
+      ],
       features: [
         " User Authentication (Login, Register, Logout)",
         "Add Friend",
@@ -124,11 +129,11 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
       name: "MallMax(ecommerce)",
       images: [
         "/project/mallmax.png",
-        "/project/mallmax.png",
-        "/project/mallmax.png",
+        "/project/mallmax2.png",
+        "/project/mallmax3.png",
       ],
       description: `This app is built in mid 2023 with LAMP stack.After taking the React + Laravel course from MM-Coder and completing it, I tried my own project.`,
-      stacks: ["Laravel", "MySql", "Apache","Bootstrap"],
+      stacks: ["Laravel", "MySql", "Apache", "Bootstrap"],
       features: [
         "Users Authentication (Admin & User)",
         "AdminDashboard",
@@ -138,22 +143,20 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "Category",
         "Product",
         "Pagination",
-        "Search (Product Name)"
+        "Search (Product Name)",
       ],
     },
     lightcode: {
       name: "lightcode",
       images: [
-        "/project/lightCode.png",
-        "/project/lightCode.png",
-        "/project/lightCode.png",
+        "/project/lightcode1.png",
+        "/project/lightcode2.png",
+        "/project/lightcode3.png",
       ],
       description: `I learned tailwind css through this project.As I was new to tailwind css, 
       I followed a tutorial on YouTube to build it.<br/> Note: This is Tutorial project`,
-      stacks: ['Tailwind',"JavaScript"],
-      features: [
-        "Toggle Pricing Card",
-      ],
+      stacks: ["Tailwind", "JavaScript"],
+      features: ["Toggle Pricing Card"],
     },
   };
 

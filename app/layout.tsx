@@ -51,15 +51,7 @@ export default function RootLayout({
             <p className="text-default-600">
             &copy; 2024 Kyaw Khant Win's Portfolio. All rights reserved.
               </p>
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
-              </Link>
+            
             </footer>
           </div>
         </Providers>

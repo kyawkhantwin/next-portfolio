@@ -15,36 +15,28 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  GithubIcon,
-  HeartFilledIcon,
-  Logo,
-} from "@/components/icons";
+import { GithubIcon, HeartFilledIcon, Logo } from "@/components/icons";
 import Image from "next/image";
 
 export const Navbar = () => {
- 
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink  className="flex justify-start items-center gap-1" href="/">
-          <p className="font-[900] font-['Roboto']  bg-gradient-to-r from-[#00b7fa] to-[#01cfea] bg-clip-text text-transparent">
-  Kyaw Khant Win
-</p>
-
+          <NextLink className="flex justify-start items-center gap-1" href="/">
+            <p className="font-[900] font-['Roboto']  bg-gradient-to-r from-[#00b7fa] to-[#01cfea] bg-clip-text text-transparent">
+              Kyaw Khant Win
+            </p>
           </NextLink>
         </NavbarBrand>
-     
       </NavbarContent>
 
+      {/* Larger screen */}
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-           <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
+        justify="end">
+        <ul className="hidden sm:flex gap-4 justify-start ml-2">
+          {siteConfig.navItems.map(item => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
@@ -52,30 +44,45 @@ export const Navbar = () => {
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 color="foreground"
-                href={item.href}
-              >
+                href={item.href}>
                 {item.label}
               </NextLink>
             </NavbarItem>
           ))}
         </ul>
         <NavbarItem className="hidden sm:flex gap-2">
-      
-
-        
-        
           <ThemeSwitch />
-          <Link isExternal aria-label="Facebook" className="ms-3"  href={siteConfig.links.facebook}>
-  <Image src="/logo/facebook.png" alt="Facebook logo" width={25} height={25} className="text-default-500" />
-</Link>
+          <Link
+            isExternal
+            aria-label="Facebook"
+            className="ms-3"
+            href={siteConfig.links.facebook}>
+            <Image
+              src="/logo/facebook.png"
+              alt="Facebook logo"
+              width={25}
+              height={25}
+              className="text-default-500"
+            />
+          </Link>
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
-        </NavbarItem>
+        <NavbarItem className="hidden md:flex"></NavbarItem>
       </NavbarContent>
+      {/* Larger screen */}
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+        <Link
+          isExternal
+          aria-label="Facebook"
+          className="ms-3"
+          href={siteConfig.links.facebook}>
+          <Image
+            src="/logo/facebook.png"
+            alt="Facebook logo"
+            width={25}
+            height={25}
+            className="text-default-500"
+          />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
@@ -93,9 +100,8 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
-                size="lg"
-              >
+                href= {item.href}
+                size="lg">
                 {item.label}
               </Link>
             </NavbarMenuItem>
