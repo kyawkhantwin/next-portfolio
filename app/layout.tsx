@@ -49,7 +49,7 @@ export default function RootLayout({
             </main>
             <footer className="w-full flex flex-col items-center justify-center py-10">
             <p className="text-default-600">
-            &copy; 2024 Kyaw Khant Win's Portfolio. All rights reserved.
+            &copy; 2024 Kyaw Khant Win&apos;s Portfolio. All rights reserved.
               </p>
             
             </footer>

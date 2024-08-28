@@ -37,8 +37,8 @@ export default function ContactPage() {
         <h1 className={title({ size: "sm" })}>Contact Me</h1>
         <div className="mt-3 md:mt-5"></div>
         <p className={subtitle()}>
-        Thank you for visiting my portfolio! You can ask any questions you might have. Whether you're
-          interested in my portfolio or just want to talk with me, I’d love to
+        Thank you for visiting my portfolio! You can ask any questions you might have. Whether you are
+          interested in my portfolio or just want to talk with me, I would  love to
           hear from you.
         </p>
       </div>

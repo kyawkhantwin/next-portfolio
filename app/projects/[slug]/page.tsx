@@ -73,7 +73,7 @@ const Page = () => {
             <Image
               key={i}
               alt={"Thumbnail " + i}
-              className={`object-cover rounded-xl ${activeThumbnail === image ? 'opacity-90' : 'opacity-60'}`}
+              className={`object-cover rounded-xl ${activeThumbnail === image ? "opacity-90" : "opacity-60"}`}
               src={image}
               onClick={() => {
                 setCurrentImageUrl(image);

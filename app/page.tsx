@@ -11,7 +11,7 @@ import { Snippet } from "@nextui-org/snippet";
 export default function Home() {
 const isWeb  =  () =>{
   console.log(typeof window)
-  return typeof window !== 'undefined';
+  return typeof window !== "undefined";
 }
 
   const isMobile = () => {
