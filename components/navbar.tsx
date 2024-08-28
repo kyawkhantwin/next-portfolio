@@ -31,7 +31,7 @@ export const Navbar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      {/* Larger screen */}
+      {/* Small screen */}
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end">
