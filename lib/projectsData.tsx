@@ -28,9 +28,9 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/bookstore3.png",
       ],
       description: `This app is built at the start of 2024 as a warm-up after taking a break.
-         It's a simple app where you need to log in to store books.
+         It is  a simple app where you need to log in to store books.
          Users can add books to their collection, but only the person who added a book can update or delete it.
-          Others won't be able to make changes to books they didn’t add.`,
+          Others would not be able to make changes to books they did not add.`,
       stacks: ["Mongo", "Express", "React", "Node.JS"],
       features: [
         "Create, Read, Update, Delete",
@@ -83,7 +83,7 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
       <br/>
       In this app, you can view the status of each table — whether it is empty, active, or reserved.
       You can also place an order based on the table number.
-      When the customer has finished eating, click the 'Done Order' button. It will
+      When the customer has finished eating, click the "Done Order" button. It will
        will direct you to the transaction page and you can print the transaction sheet if you want`,
       stacks: ["Mongo", "Express", "React", "Node.JS"],
 
