@@ -15,7 +15,7 @@ export default function AboutPage() {
             my education through Udemy. Later, I took an e-commerce tutorial
             course from MMCODER and successfully built my own e-commerce website
             using Laravel after completing that course in 2022. In 2023, I
-            studied management and took an internship, which caused me to take a
+            studied management course from SMEBi university and took an internship there, which caused me to take a
             break from coding during that period At the end of 2023, I decided
             to update my tech stack from LAMP to MERN and built some web apps.
             In 2024, I learned React Native and bulit two app e-commerce and

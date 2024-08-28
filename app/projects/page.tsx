@@ -25,9 +25,9 @@ export default function DocsPage() {
        
           slug={"ecommerce-native"}
         />
-       <p><span className="text-red-500 font-bold">Note:</span> Vercel only provides HTTPS servers; therefore, my HTTP backend server won't work.
+       <p><span className="text-red-500 font-bold">Note:</span> Vercel only provides HTTPS servers; therefore, my HTTP backend server won&apos;t work.
        <br />
-As a result, I can't provide a version of the website that uses HTTP backend.
+As a result, I can&apos;t provide a version of the website that uses HTTP backend.
        </p>
 
 
