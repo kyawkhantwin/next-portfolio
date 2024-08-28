@@ -20,7 +20,6 @@ export const sendContactForm = async (data) => {
     // If successful, return the server response
     return await response.json();
   } catch (error) {
-    console.error("Error submitting contact form:", error?.message);
     throw new Error("There was an issue submitting the form. Please try again.");
   }
 };
