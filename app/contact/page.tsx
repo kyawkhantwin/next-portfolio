@@ -26,7 +26,6 @@ export default function ContactPage() {
       setMessage("");
       alert("Form submitted successfully!");
     } catch (error) {
-      console.error("Failed to submit the form", error);
       alert("There was an error submitting the form. Please try again.");
     }
   };

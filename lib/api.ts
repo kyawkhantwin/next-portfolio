@@ -10,16 +10,19 @@ export const sendContactForm = async (data) => {
     });
 
     if (!response.ok) {
-      // If the server responds with an error, handle it
       const errorData = await response.json();
       throw new Error(
         `Server error: ${response.status} ${response.statusText}, ${errorData.message}`
       );
     }
 
-    // If successful, return the server response
     return await response.json();
   } catch (error) {
-    throw new Error("There was an issue submitting the form. Please try again.");
+    // Improved error handling to output specific error messages
+    if (error instanceof Error) {
+      throw new Error(`There was an issue submitting the form: ${error.message}`);
+    } else {
+      throw new Error("There was an issue submitting the form. Please try again.");
+    }
   }
 };
