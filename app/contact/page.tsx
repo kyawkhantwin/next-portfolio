@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { subtitle, title } from "@/components/primitives";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import { sendContactForm } from "@/lib/api";
@@ -11,7 +11,7 @@ export default function ContactPage() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const submitHandler = async (e) => {
+  const submitHandler = async (e :React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name || !email || !phone || !subject || !message) {
       alert("Please fill out all fields.");
@@ -31,10 +31,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-full flex flex-col md:flex-row justify-between gap-8">
-      <div className="md:w-1/2 w-full">
+    <div className="w-full flex flex-col md:items-center  md:flex-row justify-between gap-8">
+      <div className="md:w-1/2 w-full mb-10">
         <h1 className={title({ size: "sm" })}>Contact Me</h1>
-        <div className="mt-3 md:mt-5"></div>
+        <div className="mt-3 md:mt-5 "></div>
         <p className={subtitle()}>
         Thank you for visiting my portfolio! You can ask any questions you might have. Whether you are
           interested in my portfolio or just want to talk with me, I would  love to
@@ -50,7 +50,7 @@ export default function ContactPage() {
             variant="bordered"
             className="w-full"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
             required
           />
         </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
             variant="bordered"
             className="w-full"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             required
           />
         </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
             variant="bordered"
             className="w-full"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) => setPhone(e.target.value)}
             required
           />
         </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
             variant="bordered"
             className="w-full"
             value={subject}
-            onChange={(e) => setSubject(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) => setSubject(e.target.value)}
             required
           />
         </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
             placeholder="Enter your message"
             className="w-full"
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) => setMessage(e.target.value)}
             required
           />
         </div>

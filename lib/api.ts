@@ -1,4 +1,12 @@
-export const sendContactForm = async (data) => {
+type ContactFormData = {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+};
+
+export const sendContactForm = async (data :ContactFormData) => {
   try {
     const response = await fetch("/api/contact", {
       method: "POST",
