@@ -1,27 +1,26 @@
-"use client"
+"use client";
 
+import React, { useEffect, useState } from "react";
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
 import { Snippet } from "@nextui-org/snippet";
+import { subtitle, title } from "@/components/primitives";
 
 export default function Home() {
-const isWeb  =  () =>{
-  console.log(typeof window)
-  return typeof window !== "undefined";
-}
+  const [isMobile, setIsMobile] = useState(false);
 
-  const isMobile = () => {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  };
+  useEffect(() => {
+    const userAgent = navigator.userAgent || "";
+    setIsMobile(/Mobi|Android/i.test(userAgent));
+  }, []);
 
   return (
     <section
       className="flex text-3xl flex-col items-center justify-center w-full"
-      style={{ height: "calc(100% - 100px)" }}>
+      style={{ height: "calc(100% - 100px)" }}
+    >
       <div>
         <div>
           <h1 className={title({ class: "whitespace-nowrap" })}>
@@ -50,7 +49,8 @@ const isWeb  =  () =>{
               radius: "full",
               variant: "shadow",
             })}
-            href={isMobile() ? siteConfig.links.mobileMessenger :  siteConfig.links.webMessenger }>
+            href={isMobile ? siteConfig.links.mobileMessenger : siteConfig.links.webMessenger}
+          >
             <Image
               src="/messenger.png"
               width={20}
