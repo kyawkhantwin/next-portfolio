@@ -51,7 +51,7 @@ export default function RootLayout({
           property="og:description"
           content="Explore my portfolio to see my projects, skills, and experiences. Feel free to reach out if you have any questions or want to connect! 😊"
         />
-        <meta property="og:image" content="/hero.png" />
+        <meta property="og:image" content="https://next-portfolio-git-main-kyaw-khant-wins-projects.vercel.app/hero.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -61,7 +61,7 @@ export default function RootLayout({
           property="twitter:description"
           content="Explore my portfolio to see my projects, skills, and experiences. Feel free to reach out if you have any questions or want to connect! 😊"
         />
-        <meta property="twitter:image" content="/hero.png" />
+        <meta property="twitter:image" content="https://next-portfolio-git-main-kyaw-khant-wins-projects.vercel.app/hero.png" />
       </head>
       <body
         className={clsx(
