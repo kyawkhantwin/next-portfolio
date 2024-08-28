@@ -18,36 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Head>
-        {/* Primary Meta Tags */}
-        <title>🔗 Check Out My Portfolio</title>
-        <meta name="title" content="🔗 Check Out My Portfolio" />
-        <meta
-          name="description"
-          content="Explore my portfolio to see my projects, skills, and experiences. Feel free to reach out if you have any questions or want to connect! 😊"
-        />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://next-portfolio-bay-one.vercel.app/" />
-        <meta property="og:title" content="🔗 Check Out My Portfolio" />
-        <meta
-          property="og:description"
-          content="Explore my portfolio to see my projects, skills, and experiences. Feel free to reach out if you have any questions or want to connect! 😊"
-        />
-        <meta property="og:image" content="/hero.png" />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://next-portfolio-bay-one.vercel.app/" />
-        <meta property="twitter:title" content="🔗 Check Out My Portfolio" />
-        <meta
-          property="twitter:description"
-          content="Explore my portfolio to see my projects, skills, and experiences. Feel free to reach out if you have any questions or want to connect! 😊"
-        />
-        <meta property="twitter:image" content="/hero.png" />
-      </Head>
+     
 
       <section
       className="flex text-3xl flex-col items-center justify-center w-full"
@@ -102,7 +73,6 @@ export default function Home() {
           </div>
       </div>
     </section>
-    </>
 
   );
 }
