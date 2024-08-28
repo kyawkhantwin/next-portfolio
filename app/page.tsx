@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
@@ -30,7 +30,7 @@ const isWeb  =  () =>{
           </h1>
           <br />
           <h1 className={title()}>
-            I'm
+            I&apos;m
             <span className={title({ color: "cyan" })}>
               {" "}
               Kyaw Khant Win&nbsp;
