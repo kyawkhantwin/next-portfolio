@@ -19,7 +19,7 @@ export default function DocsPage() {
         <Project
           name={"Ecommerce"}
           url="/project/ecommercenative.png"
-          link="https://expo.dev/preview/update?message=update%20search%20bar&updateRuntimeVersion=1.0.0&createdAt=2024-08-28T08%3A27%3A46.226Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=f6a08f8e-d71a-4230-8f45-3a780f7af4a9"
+          link="https://expo.dev/preview/update?message=final%20ecommerce&updateRuntimeVersion=1.0.0&createdAt=2024-08-29T11%3A55%3A53.828Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=f45b202e-05f2-41fa-99cd-b73bcf6e19a5"
           slug={"ecommerce-native"}
         />
         <p>
