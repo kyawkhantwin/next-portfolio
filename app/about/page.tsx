@@ -47,6 +47,8 @@ export default function AboutPage() {
               <div className="flex justify-center items-start flex-col gap-2">
                 <TechLogo logo="prisma.png" name={"Primsa"} />
                 <TechLogo logo="express.png" name={"Express Js"} />
+                <TechLogo logo="redux.png" name={"Redux"} />
+
               </div>
             </div>
           </div>
