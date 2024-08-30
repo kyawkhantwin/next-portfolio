@@ -11,9 +11,9 @@ export default function DocsPage() {
         </h1>
 
         <Project
-          name={"Real Time Chatting Feature"}
+          name={"Real Time Chatting Feature (Update)"}
           url="/project/chatnative.png"
-          link="https://expo.dev/preview/update?message=update%20token&updateRuntimeVersion=1.0.0&createdAt=2024-08-28T15%3A05%3A03.353Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=2405113e-ab8f-4a74-895b-e0ddcf532176"
+          link="https://expo.dev/preview/update?message=done%20fixed&updateRuntimeVersion=1.0.0&createdAt=2024-08-30T17%3A58%3A37.947Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=2ca4e87b-5c2d-470e-b893-2fd273cbedb1"
           slug={"chat"}
         />
         <Project
