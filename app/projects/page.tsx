@@ -17,9 +17,9 @@ export default function DocsPage() {
           slug={"chat"}
         />
         <Project
-          name={"Ecommerce"}
+          name={"Ecommerce (Updated)"}
           url="/project/ecommercenative.png"
-          link="https://expo.dev/preview/update?message=final%20ecommerce&updateRuntimeVersion=1.0.0&createdAt=2024-08-29T11%3A55%3A53.828Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=f45b202e-05f2-41fa-99cd-b73bcf6e19a5"
+          link="https://expo.dev/preview/update?message=done%20all%20i%20think&updateRuntimeVersion=1.0.0&createdAt=2024-08-30T15%3A58%3A44.197Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=98225e9f-789f-4975-a49c-2e0a3cbb68ca"
           slug={"ecommerce-native"}
         />
         <p>
