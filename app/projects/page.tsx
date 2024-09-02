@@ -66,6 +66,7 @@ export default function DocsPage() {
         <div className="flex flex-row flex-wrap  items-start gap-4 my-5">
           <Project
             name={"Light Code"}
+            link="https://tailwind-1-ten.vercel.app/"
             url={"/project/lightcode1.png"}
             slug={"lightcode"}
           />
