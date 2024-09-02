@@ -10,8 +10,8 @@ export default function DocsPage() {
           React Native FullStack (Web+Mobile)
         </h1>
         <Project
-        link="https://expo.dev/preview/update?message=added%20url%20%26%20real%20time%20chat&updateRuntimeVersion=1.0.0&createdAt=2024-09-02T13%3A31%3A44.680Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=a700f240-0291-4f1c-ac7a-beb2ebf6e535"
-          name={"Real Time Chatting Feature (Updated)"}
+        link="https://expo.dev/preview/update?message=This%20is%20Real%20Time&updateRuntimeVersion=1.0.0&createdAt=2024-09-02T13%3A48%3A41.825Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=aa8ca4b8-65f6-45ff-8d84-e4777bcaec40"
+          name={"Real Time Chat (Updated)"}
           url="/project/chatnative.png"
           slug={"chat"}
         />
@@ -22,7 +22,7 @@ export default function DocsPage() {
           slug={"ecommerce-native"}
         />
         <p>
-        <p><span className="text-red-500 font-bold">Note:</span> Clik View To See Mobile app </p>
+        <p><span className="text-green-500 font-bold">PS:</span> Clik View To See Mobile app </p>
 
           <span className="text-red-500 font-bold">Note:</span> Vercel only
           provides HTTPS servers; therefore, my HTTP backend server won&apos;t
