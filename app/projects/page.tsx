@@ -19,17 +19,8 @@ export default function DocsPage() {
           url="/project/ecommercenative.png"
           slug={"ecommerce-native"}
         />
-        <p>
-        <p><span className="text-green-500 font-bold">PS:</span> Clik View To See Mobile app </p>
+        
 
-          <span className="text-red-500 font-bold">Note:</span> Vercel only
-          provides HTTPS servers; therefore, my HTTP backend server won&apos;t
-          work.
-          <br />
-          As a result, I can&apos;t provide a version of the website that uses
-          HTTP backend.
-
-        </p>
       </div>
       <div className="">
         <h1 className={subtitle({ bold: true })}>Laravel FullStack</h1>

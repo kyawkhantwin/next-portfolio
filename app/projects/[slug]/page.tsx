@@ -58,20 +58,22 @@ const Page = () => {
       </p>
 
       {/* Image */}
-      <div className="flex flex-col lg:flex-row items-center justify-start gap-2 md:gap-4">
-        <div className="lg:w-2/3 w-full">
+      <div className="flex w-[90vw] flex-col md:flex-row items-center justify-center gap-2 md:gap-2">
+        <div className=" ">
           {currentImageUrl && (
             <Image
+            height={500}
               alt={data?.name || "Image"}
               className="object-cover rounded-xl"
               src={currentImageUrl}
             />
           )}
         </div>
-        <div className="lg:w-1/5 w-full flex md:flex-col gap-2 md:gap-4">
+        <div className=" flex flex-row md:flex-col gap-2 md:gap-4">
           {data?.images?.map((image, i) => (
             <Image
               key={i}
+              height={125}
               alt={"Thumbnail " + i}
               className={`object-cover rounded-xl ${activeThumbnail === image ? "opacity-90" : "opacity-60"}`}
               src={image}

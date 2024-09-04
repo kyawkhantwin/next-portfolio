@@ -40,9 +40,9 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     "ecommerce-native": {
       name: "React Native Ecommerce",
       images: [
-        "/project/ecommercenative1.png",
-        "/project/ecommercenative2.png",
-        "/project/ecommercenative3.png",
+        "/project/ecommerce-phone1.jpg",
+        "/project/ecommerce-phone2.jpg",
+        "/project/ecommerce-phone3.jpg",
       ],
       description: `After writting the react-native chat application , I learned redux and nest.js to updated my stack.
     I put everything together in this eCommerce project.
@@ -99,9 +99,10 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
     chat: {
       name: "Chat (Real Time Chat Feature)",
       images: [
-        "/project/chat1.png",
-        "/project/chat2.png",
-        "/project/chat3.png",
+        "/project/chat1.jpg",
+
+        "/project/chat2.jpg",
+        "/project/chat3.jpg",
       ],
       description: `After the Restaurant POS project, 
       I built this React Native chat app . In this project,
