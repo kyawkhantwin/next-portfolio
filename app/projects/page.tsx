@@ -10,13 +10,11 @@ export default function DocsPage() {
           React Native FullStack (Web+Mobile)
         </h1>
         <Project
-        link="https://expo.dev/preview/update?message=This%20is%20Real%20Time&updateRuntimeVersion=1.0.0&createdAt=2024-09-02T13%3A48%3A41.825Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=aa8ca4b8-65f6-45ff-8d84-e4777bcaec40"
           name={"Real Time Chat (Updated)"}
           url="/project/chatnative.png"
           slug={"chat"}
         />
         <Project
-        link="https://expo.dev/preview/update?message=done%20all%20i%20think&updateRuntimeVersion=1.0.0&createdAt=2024-08-30T15%3A58%3A44.197Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=98225e9f-789f-4975-a49c-2e0a3cbb68ca"
           name={"Ecommerce (Updated)"}
           url="/project/ecommercenative.png"
           slug={"ecommerce-native"}
@@ -66,7 +64,6 @@ export default function DocsPage() {
         <div className="flex flex-row flex-wrap  items-start gap-4 my-5">
           <Project
             name={"Light Code"}
-            link="https://tailwind-1-ten.vercel.app/"
             url={"/project/lightcode1.png"}
             slug={"lightcode"}
           />
