@@ -27,7 +27,10 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/bookstore2.png",
         "/project/bookstore3.png",
       ],
-      description: ``,
+      description: `
+       Using MongoDB, Express, React, and Node.js, this book store project supports user authentication for login, registration, and logout. 
+       It includes full CRUD functionality, allowing only the creator to edit or delete their own books. 
+       The user interface features card and table layouts for a clear and organized browsing experience.`,
       stacks: ["Mongo", "Express", "React", "Node.JS"],
       features: [
         "Create, Read, Update, Delete",
@@ -41,7 +44,13 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/ecommerce-phone2.jpg",
         "/project/ecommerce-phone3.jpg",
       ],
-      description: ``,
+      description:`This e-commerce project offers user authentication for both admins and users, an Admin Dashboard, and functionalities such as a shopping cart and order management. 
+      It allows searching by category or product name and offers both light and dark themes.
+       The platform also includes customizable settings for a personalized experience. 
+       It provides a complete solution for efficiently managing an online store.
+      `
+
+,
       stacks: [
         "Expo React Native",
         "GlueStack Ui",
@@ -55,6 +64,7 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "AdminDashboard",
         "Cart",
         "Order",
+        "Review",
         "Transaction",
         "Category",
         "Product",
@@ -70,7 +80,8 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/restaurant2.png",
         "/project/restaurant3.png",
       ],
-      description: ``,
+      description: `
+      This React Restaurants POS system is built with MongoDB, Express, React, and Node.js. It manages menus and allows dish selection before order confirmation, along with processing orders and transactions. The system supports both admin and user authentication. An Admin Dashboard is provided for efficient management.`,
       stacks: ["Mongo", "Express", "React", "Node.JS"],
 
       features: [
@@ -90,7 +101,10 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/chat2.jpg",
         "/project/chat3.jpg",
       ],
-      description: `
+      description:` 
+      Just like social media, this application includes functions such as adding friends, canceling friend requests, unfriending, messaging, and user login/logout.
+     With the help of Socket.IO, I was able to build a real-time application that provides instant updates and interactions.
+     In this app, messaging is restricted to friends only, ensuring a secure and private communication environment.
       `,
       stacks: [
         "Socket.io",
@@ -116,7 +130,11 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/mallmax2.png",
         "/project/mallmax3.png",
       ],
-      description: ``,
+      description: `
+      This project uses Laravel, MySQL, Apache, and Bootstrap.
+      It includes user authentication, an Admin Dashboard, and tools for managing carts, orders, transactions, and categories.
+      Users can search for products by name and able to use pagination.
+      It also provides a review system for products enhances user feedback.`,
       stacks: ["Laravel", "MySql", "Apache", "Bootstrap"],
       features: [
         "Users Authentication (Admin & User)",
@@ -137,7 +155,8 @@ export const getDataBaseOnRoute = (slug: ProjectSlug) => {
         "/project/lightcode2.png",
         "/project/lightcode3.png",
       ],
-      description: ``,
+      description: ` Lightcode is a YouTube tutorial project where I learned Tailwind CSS. 
+      It features a beautiful single-page UI with a toggle pricing card and blog`,
       stacks: ["Tailwind", "JavaScript"],
       features: ["Toggle Pricing Card"],
     },

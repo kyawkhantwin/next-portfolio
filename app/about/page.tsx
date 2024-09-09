@@ -11,8 +11,11 @@ export default function AboutPage() {
           <h1 className={title({ size: "md" })}>About Me</h1>
           <div className="mt-3"></div>
           <p>
-           
-          </p>
+          I’m a full-stack developer with a focus on React, React Native, and Next.js for web and mobile apps.
+          On the backend, I use Node.js and Nest.js  to build scalable systems.
+            With strong frontend and backend skills, I can handle any project.
+            I’m also dedicated to learning and growing in my field, enjoy working with others, and am always ready for new challenges. 
+          </p>          
         </div>
         <div className=" md:w-1/3 flex justify-center md:justify-end">
           <Image width={300} height={300} src="/kkw.jpg" alt="Kyaw Khant Win" />
