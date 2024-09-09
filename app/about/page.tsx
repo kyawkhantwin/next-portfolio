@@ -11,15 +11,7 @@ export default function AboutPage() {
           <h1 className={title({ size: "md" })}>About Me</h1>
           <div className="mt-3"></div>
           <p>
-            I started learning web basics from MMSIT in 2021 and then continued
-            my education through Udemy. Later, I took an e-commerce tutorial
-            course from MMCODER and successfully built my own e-commerce website
-            using Laravel after completing that course in 2022. In 2023, I
-            studied management course from SMEBi university and took an internship there, which caused me to take a
-            break from coding during that period At the end of 2023, I decided
-            to update my tech stack from LAMP to MERN and built some web apps.
-            In 2024, I learned React Native and bulit two app e-commerce and
-            chat.
+           
           </p>
         </div>
         <div className=" md:w-1/3 flex justify-center md:justify-end">
