@@ -11,11 +11,13 @@ export default function DocsPage() {
         </h1>
         <Project
           name={"Real Time Chat (Updated)"}
+          link="https://expo.dev/preview/update?message=chat%20done&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T05%3A08%3A27.233Z&slug=exp&projectId=335962c1-67de-4e7c-bd1c-ed8ab4005fa9&group=b2bc565d-fef6-48d9-8d97-54d9f5f6c11e"
           url="/project/chatnative.png"
           slug={"chat"}
         />
         <Project
           name={"Ecommerce (Updated)"}
+          link="https://expo.dev/preview/update?message=ecommerce&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T04%3A07%3A34.384Z&slug=exp&projectId=8f98f760-fe52-4a0d-8212-8d23831e3cb7&group=a91f3078-1638-4ffc-913b-a02af8deef9c"
           url="/project/ecommercenative.png"
           slug={"ecommerce-native"}
         />
